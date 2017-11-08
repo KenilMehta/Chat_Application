@@ -32,8 +32,10 @@ public class ConnectToSocket extends AsyncTask<String, Void, Boolean>{
             Socket s;
             s = new Socket(params[0], Integer.parseInt(params[1]));
             client = Client.getInstance();
-            client.setObjectInputStream((ObjectInputStream) s.getInputStream());
-            client.setObjectOutputStream((ObjectOutputStream) s.getOutputStream());
+            ObjectInputStream objIn = new ObjectInputStream(s.getInputStream());
+            ObjectOutputStream objOut = new ObjectOutputStream(s.getOutputStream());
+            client.setObjectInputStream(objIn);
+            client.setObjectOutputStream(objOut);
             return true;
         }catch(Exception e) {
             e.printStackTrace();

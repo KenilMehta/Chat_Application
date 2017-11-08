@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/signup_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/signup_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/signup_username"
+        android:layout_centerHorizontal="true">
+    </EditText>
+
+    <EditText
+        android:id="@+id/signup_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/signup_pass"
+        android:layout_centerHorizontal="true">
+    </EditText>
+
+    <EditText
+        android:id="@+id/signup_mob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/signup_confirm"
+        android:layout_centerHorizontal="true">
+    </EditText>
+
+    <TextView
+        android:id="@+id/signup_show_message"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:layout_below="@+id/signup_mob"
+        android:layout_centerHorizontal="true"></TextView>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:text="Sign Up" />
+</RelativeLayout>
